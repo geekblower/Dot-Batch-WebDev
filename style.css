@@ -1,0 +1,41 @@
+#index-list .chapter-name {
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#index-list .lectures {
+    color: red;
+    font-size: 25px;
+    background-color: rgba(130, 255, 255, 0.285);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    list-style: square;
+    width: fit-content;
+    padding: 5px 15px;
+    margin-top: 25px;
+}
+
+#index-list .lectures:hover {
+    background-color: rgb(130, 255, 255);
+    cursor: pointer;
+}
+
+#index-list .lec-index {
+    margin: 10px;
+    list-style: decimal-leading-zero;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+#index-list .lec-completion-date {
+    font-style: italic;
+    text-decoration: underline;
+    margin-left: 2%;
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: bolder;
+}
