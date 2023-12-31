@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice Page</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .details {
+            font-family: monospace;
+            text-align: left;
+        }
+
+        p {
+            color: red;
+        }
+
+        h1 {
+            color: aqua;
+        }
+
+        .para-1 {
+            color: goldenrod;
+            background-color: black;
+            width: fit-content;
+        }
+
+        .para-2 {
+            color: black;
+            background-color: goldenrod;
+            width: fit-content;
+        }
+
+        .head-1 {
+            color: maroon;
+            background-color: burlywood;
+            width: fit-content;
+        }
+
+        .head-2 {
+            color: burlywood;
+            background-color: maroon;
+            width: fit-content;
+        }
+
+        .small {
+            color: black;
+            font-size: smaller;
+        }
+
+        .large {
+            font-size: larger;
+        }
+
+        #btn-1 {
+            color: mediumvioletred;
+        }
+
+        #btn-2 {
+            color: mediumturquoise;
+        }
+
+        #btn-3 {
+            color: mediumorchid;
+        }
+
+        #btn-4 {
+            color: mediumaquamarine;
+        }
+
+        #btn-5 {
+            color: mediumslateblue;
+        }
+
+        .btn {
+            color: maroon;
+            background-color: yellow;
+            border: 2px black solid;
+        }
+
+        .btn:hover {
+            color: yellow;
+            background-color: maroon;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p
+        style="color: rgb(60, 0, 255); background-color: rgb(190, 255, 60); font-family: sans-serif; font-weight: 800; font-size: 35px; text-align: center;">
+        Types of Selectors</p>
+
+    <table>
+        <thead>
+            <th colspan="4">
+                Types of Selectors
+            </th>
+        </thead>
+        <tr>
+            <td rowspan="8">Selectors</td>
+            <td rowspan="3">Simple Selector</td>
+            <td>Element Selector</td>
+            <td class="details">Using tag name</td>
+        </tr>
+
+        <tr>
+            <td>Class Selector</td>
+            <td class="details">Using "class" keyword (.)</td>
+        </tr>
+
+        <tr>
+            <td>ID Selector</td>
+            <td class="details">Using "id" keyword (#)</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Pseudo-class Selector</td>
+            <td class="details">For special effect (:)</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Multiple Selector</td>
+            <td class="details">Using different selectors using comma</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Universal Selector</td>
+            <td class="details">Using (*) for whole page</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Nested Selector</td>
+            <td class="details">For nested elements using there parent's selector</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Attribute Selector</td>
+            <td class="details">Selecting on the basis of common attributes</td>
+        </tr>
+    </table>
+
+    <p
+        style="color: rgb(60, 0, 255); background-color: rgb(190, 255, 60); font-family: sans-serif; font-weight: 800; font-size: 35px; text-align: center;">
+        Element Selector</p>
+
+    <p>This is my first paragraph.</p>
+    <h1>This is my first heading.</h1>
+    <p>This is my second paragraph.</p>
+    <h1>This is my second heading.</h1>
+
+    <p
+        style="color: rgb(60, 0, 255); background-color: rgb(190, 255, 60); font-family: sans-serif; font-weight: 800; font-size: 35px; text-align: center;">
+        Class Selector</p>
+
+    <p class="para-1">This is my first paragraph of para-1 class.</p>
+    <h1 class="head-1">This is my first heading of head-1 class.</h1>
+    <p class="para-2">This is my first paragraph of para-2 class.</p>
+    <h1 class="head-2">This is my first heading of head-2 class.</h1>
+    <p class="para-1">This is my second paragraph of para-1 class.</p>
+    <h1 class="head-1">This is my second heading of head-1 class.</h1>
+    <p class="para-2">This is my second paragraph of para-2 class.</p>
+    <h1 class="head-2">This is my second heading of head-2 class.</h1>
+
+    <p
+        style="color: rgb(60, 0, 255); background-color: rgb(190, 255, 60); font-family: sans-serif; font-weight: 800; font-size: 35px; text-align: center;">
+        h1-h6 Task</p>
+
+    <h1 class="small">Heading 1</h1>
+    <h2 class="small">Heading 2</h2>
+    <h3 class="small">Heading 3</h3>
+    <h4 class="large">Heading 4</h4>
+    <h5 class="large">Heading 5</h5>
+    <h6 class="large">Heading 6</h6>
+
+    <p
+        style="color: rgb(60, 0, 255); background-color: rgb(190, 255, 60); font-family: sans-serif; font-weight: 800; font-size: 35px; text-align: center;">
+        ID Selector</p>
+
+    <button id="btn-1">Submit</button>
+    <button id="btn-2">Submit</button>
+    <button id="btn-3">Submit</button>
+    <button id="btn-4">Submit</button>
+    <button id="btn-5">Submit</button>
+
+    <p
+        style="color: rgb(60, 0, 255); background-color: rgb(190, 255, 60); font-family: sans-serif; font-weight: 800; font-size: 35px; text-align: center;">
+        Pseudo-class Selector</p>
+
+    <button class="btn">Click Here</button>
+
+    <p
+        style="color: rgb(60, 0, 255); background-color: rgb(190, 255, 60); font-family: sans-serif; font-weight: 800; font-size: 35px; text-align: center;">
+        Specificity (id > class > type)</p>
+
+    <div id="div-id" class="div-class" style="background-color: yellow;">
+        This is a div
+    </div>
+
+    <style>
+        div {
+            background-color: lightcoral !important;
+        }
+
+        .div-class {
+            background-color: lightgoldenrodyellow;
+        }
+
+        #div-id {
+            background-color: aquamarine;
+        }
+    </style>
+</body>
+
+</html>
