@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions Practice Page</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="parent">
+        <div id="first">HELLO</div>
+        <div id="second">HELLO</div>
+        <div id="third">HELLO</div>
+        <div id="fourth">HELLO</div>
+        <div id="fifth">HELLO</div>
+    </div>
+
+    <style>
+        #parent {
+            height: 250px;
+            width: 500px;
+            border: 5px solid black;
+        }
+
+        #first {
+            position: relative;
+            float: left;
+        }
+
+        #second {
+            position: relative;
+            float: right;
+        }
+
+        #third {
+            position: relative;
+            top: 115px;
+            left: 180px;
+        }
+
+        #fourth {
+            position: relative;
+            top: 216px;
+            /* left: 0px; */
+        }
+
+        #fifth {
+            position: relative;
+            left: 448px;
+            top: 198px;
+        }
+    </style>
+
+</body>
+
+</html>

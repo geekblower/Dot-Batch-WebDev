@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Practice Page</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <p
+        style="color: rgb(60, 0, 255); background-color: rgb(190, 255, 60); font-family: sans-serif; font-weight: 800; font-size: 35px; text-align: center;">
+        Text Transformation</p>
+
+    <div id="one">TRANSLATE</div>
+    <div id="two">ROTATE</div>
+    <div id="three">SCALE</div>
+    <div id="four">SKEW</div>
+
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #one {
+            transform: translate(250px, 8.5px);
+        }
+
+        #two {
+            /* transform: rotate(45deg); */
+            transform: rotate(-45deg);
+        }
+        
+        #three {
+            margin: 50px;
+            transform: scale(1.5, 2);
+        }
+        
+        #four {
+            transform: skew(-15deg);
+        }
+    </style>
+
+</body>
+
+</html>
